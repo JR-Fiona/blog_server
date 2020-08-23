@@ -1,0 +1,46 @@
+/* layout start */
+.container {
+  position: relative;
+  width: 55rem;
+  margin: 0 auto;
+}
+.category {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+}
+.content { width: 70%; }
+/* layout start */
+
+/* content start */
+p {
+  line-height: 1.5em;
+  font-size: 1rem;
+  margin: 30px 0;
+}
+
+.title2 { font-size: 1.5rem; }
+.title2 a { font-size: 1.6rem; }
+
+pre {
+  overflow-x: auto;
+  white-space: pre;
+  word-break: normal;
+  line-height: 1.3rem;
+  margin: .9rem .75rem;
+  border-radius: 3px;
+  color: rgb(51, 51, 51);
+  font-size: .6rem;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+/* 引言 */
+.my_blockquote {
+  margin: 20px 0 20px;
+  padding: 10px 20px;
+  border-left: 5px solid #eee;
+  color: gray;
+  font-style: italic;
+}
+/* content end */
