@@ -27,9 +27,9 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 export default class Index extends Vue {
   private menus = ['menu3', '目录', '首页']
   @Prop({ type: String, default: 'Djiarong' }) title!: string
-  mounted() {
-    console.log('title...', this.title);
-  }
+  // mounted() {
+  //   console.log('title...', this.title);
+  // }
 }
 </script>
 <style lang="scss" scoped>

@@ -7,7 +7,7 @@
 -->
 <template>
   <div>
-    <Navigation :title="title" />
+    <!-- <Navigation :title="title" /> -->
     <Nuxt />
   </div>
 </template>
