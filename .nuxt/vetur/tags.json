@@ -1,0 +1,26 @@
+{
+  "Catalog": {
+    "description": "Auto imported from components/Catalog.vue"
+  },
+  "LazyCatalog": {
+    "description": "Auto imported from components/Catalog.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "MyBlockquote": {
+    "description": "Auto imported from components/MyBlockquote.vue"
+  },
+  "LazyMyBlockquote": {
+    "description": "Auto imported from components/MyBlockquote.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "LazyNavigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  }
+}

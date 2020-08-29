@@ -1,0 +1,14 @@
+[
+  {
+    "name": "diary-20200803",
+    "path": "/diary/20200803",
+    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200803.vue",
+    "chunkName": "pages/diary/20200803"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
