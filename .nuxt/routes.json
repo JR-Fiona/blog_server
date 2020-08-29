@@ -3,12 +3,14 @@
     "name": "diary-20200803",
     "path": "/diary/20200803",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200803.vue",
-    "chunkName": "pages/diary/20200803"
+    "chunkName": "pages/diary/20200803",
+    "_name": "_793f8e29"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_529ab16c"
   }
 ]
