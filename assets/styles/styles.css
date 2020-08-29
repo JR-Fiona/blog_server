@@ -1,16 +1,14 @@
 /* layout start */
 .container {
-  position: relative;
+  /* position: relative; */
   width: 55rem;
   margin: 0 auto;
 }
-.category {
-  position: absolute;
-  top: 5rem;
-  right: 0;
+.catalog {
+  float: right;
 }
 .content { 
-  margin-left: 7rem;
+  display: inline-block;
   width: 70%; 
 }
 /* layout start */
