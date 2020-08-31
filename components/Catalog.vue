@@ -24,7 +24,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 export default class Catalog extends Vue {
   @Prop({ type: Array, required: true }) readonly nodes: any
   mounted() {
-    console.log('this nodes...', this.nodes);
+    // console.log('this nodes...', this.nodes);
   }
 }
 </script>

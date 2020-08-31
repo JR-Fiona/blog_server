@@ -1,9 +1,27 @@
 {
+  "BaseArchive": {
+    "description": "Auto imported from components/BaseArchive.vue"
+  },
+  "LazyBaseArchive": {
+    "description": "Auto imported from components/BaseArchive.vue"
+  },
+  "BaseSummary": {
+    "description": "Auto imported from components/BaseSummary.vue"
+  },
+  "LazyBaseSummary": {
+    "description": "Auto imported from components/BaseSummary.vue"
+  },
   "Catalog": {
     "description": "Auto imported from components/Catalog.vue"
   },
   "LazyCatalog": {
     "description": "Auto imported from components/Catalog.vue"
+  },
+  "ChapterTitle": {
+    "description": "Auto imported from components/ChapterTitle.vue"
+  },
+  "LazyChapterTitle": {
+    "description": "Auto imported from components/ChapterTitle.vue"
   },
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
