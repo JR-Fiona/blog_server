@@ -14,6 +14,7 @@
     "@types/react": "^16.9.48",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/babel-preset-jsx": "^1.1.2",
+    "ant-design-vue": "^1.6.5",
     "element-ui": "^2.13.2",
     "flv.js": "^1.5.0",
     "highlight.js": "^10.1.2",
@@ -23,7 +24,8 @@
     "vue-class-component": "^7.2.5",
     "vue-property-decorator": "^9.0.0",
     "vuex": "^3.5.1",
-    "vuex-module-decorators": "^0.17.0"
+    "vuex-module-decorators": "^0.17.0",
+    "wangeditor": "^3.1.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

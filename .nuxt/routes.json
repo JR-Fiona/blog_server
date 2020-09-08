@@ -1,16 +1,26 @@
 [
   {
+    "name": "editor",
+    "path": "/editor",
+    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/editor.vue",
+    "chunkName": "pages/editor"
+  },
+  {
     "name": "diary-20200803",
     "path": "/diary/20200803",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200803.vue",
-    "chunkName": "pages/diary/20200803",
-    "_name": "_793f8e29"
+    "chunkName": "pages/diary/20200803"
+  },
+  {
+    "name": "diary-20200906",
+    "path": "/diary/20200906",
+    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200906.vue",
+    "chunkName": "pages/diary/20200906"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_529ab16c"
+    "chunkName": "pages/index"
   }
 ]

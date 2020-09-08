@@ -38,7 +38,9 @@ export default {
     '@/assets/styles/lib.css',
     '@/assets/styles/reset.css',
     '@/assets/styles/styles.css',
-    'highlight.js/styles/github.css'
+    'ant-design-vue/dist/antd.css',
+    'highlight.js/styles/github.css',
+    // 'ant-design-vue/lib/button/style/css'
   ],
   /*
   ** Plugins to load before mounting the App

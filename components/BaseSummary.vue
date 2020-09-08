@@ -1,13 +1,10 @@
 <template>
-  <div class="summary ovh tal auto csp">
-    <h2>标题</h2>
+  <div class="summary ovh tal auto">
+    <h2><nuxt-link :to="summary.route">{{ summary.title }}</nuxt-link></h2>
     <summary class="f14 ga3">
-      <i>概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概
-        述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概述概
-        述概述概述概述概述概述概述概述
-      </i>
+      <i>{{ summary.summary }}</i>
     </summary>
-    <footer class="f18 pt10 pb20 i g6">Posted by Djiarong on July 28th, 2020</footer>
+    <footer class="f18 pt10 pb20 i g6">Posted by jiarong.deng on {{ summary.postedTime }}</footer>
     <hr>
   </div>
 </template>
@@ -17,6 +14,8 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 interface SummaryProp {
   title: string;
+  summary: string;
+  postedTime: string;
 }
 const GreetingProps = Vue.extend({
   props: {

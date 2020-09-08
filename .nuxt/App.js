@@ -11,6 +11,8 @@ import '../assets/styles/reset.css'
 
 import '../assets/styles/styles.css'
 
+import '../node_modules/ant-design-vue/dist/antd.css'
+
 import '../node_modules/highlight.js/styles/github.css'
 
 import _6f6c098b from '../layouts/default.vue'

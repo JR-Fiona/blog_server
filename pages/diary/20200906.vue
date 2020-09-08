@@ -2,7 +2,7 @@
  * @Author: jiarong.deng
  * @Date: 2020-07-29 22:13:05
  * @LastEditors: jiarong.deng
- * @LastEditTime: 2020-08-31 23:28:38
+ * @LastEditTime: 2020-09-06 18:20:18
  * @Description: file content
 -->
 <template>
@@ -23,7 +23,7 @@
         如果浏览器不支持 video 标签则会显示标签中的提示文字。
       </code>
 
-      <code class="paragraph"><pre id="pre"><code class="html">{{ code111 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="html">{{ code111 }}</code></pre></code>
       
       <code class="paragraph">
         当然<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLMediaElement" target="_blank"> HTMLVideoElement </a>
@@ -53,13 +53,13 @@
         play、pause 方法自然是最常用的 video 标签的方法了，当中 play 方法需要注意，使用之前可先判断 video.paused || video.ended ，避免不必要的调用。
         另外它是异步的，如果有需要等待播放成功后做的逻辑，必须在 play() 的回调里进行。
       </code>
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code121 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code121 }}</code></pre></code>
 
       <code class="paragraph">
         终止播放不是仅仅是调用 pause 方法即可，浏览器还会继续下载媒体直至媒体元素被垃圾回收机制回收。
         下面是即刻停止媒体下载的方法：
       </code>
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code122 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code122 }}</code></pre></code>
       <code class="paragraph">
         通过移除媒体元素的 src 属性，或者直接将其设为一个空字符串，从而结束媒体下载。
          removeAttribute() 操作并不干净， 而将 &lt;video&gt; 元素的  src 属性设为空字符串可能会引起我们不想要的请求。
@@ -69,7 +69,7 @@
          video 是否正在播放的状态，可以通过监听 canplay 事件获取。
         在播放过程中，会不断触发 canplay 事件，以至于我们不能在里面做过多且复杂的逻辑。
       </code>
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code123 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code123 }}</code></pre></code>
 
       <!-- 1.3 start -->
       <chapter-title title="1.3 自定义控制条" type="h3" />
@@ -87,16 +87,16 @@
       </code>
 
       <code class="paragraph">下面是一个自定义 播放/暂停 的示例：</code>
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code131 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code131 }}</code></pre></code>
 
       <code class="paragraph">下面是一个自定义 进度条 的示例：</code>
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code132 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code132 }}</code></pre></code>
       <!-- 1.3 end -->
 
       <!-- 1.4 start -->
       <chapter-title title="1.4 各环境中的 API" type="h3" />
 
-      <code class="paragraph"><pre id="pre"><code class="html">{{ code141 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="html">{{ code141 }}</code></pre></code>
 
       <code class="paragraph">
         webkit-playsinline 和 playsinline 视频播放时局域播放，不脱离文档流 。
@@ -138,8 +138,8 @@
         而在 windows pc 上，需要<a href="https://github.com/video-dev/hls.js/" target="_blank"> hlsjs </a>处理播放。
          hls 直播流会存在相对较大的延迟，一般在 10s 以上（仅供参考）。
       </code>
-      <code class="paragraph"><pre id="pre"><code class="html">{{ code211 }}</code></pre></code>
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code212 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="html">{{ code211 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code212 }}</code></pre></code>
       <!-- 2.1 end -->
       <!-- 2.2 start -->
       <chapter-title title="2.1 Flv 介绍及使用" type="h3" />
@@ -163,7 +163,7 @@
         <img class="bs" width="100%" src="~/assets/images/20200803/media_source_extensions.png" alt="😑">
       </code>
 
-      <code class="paragraph"><pre id="pre"><code class="javascript">{{ code221 }}</code></pre></code>
+      <code class="paragraph"><pre><code class="javascript">{{ code221 }}</code></pre></code>
       <!-- 2.2 end -->
     </main>
     <Catalog :nodes="nodes" />
