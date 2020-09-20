@@ -3,24 +3,28 @@
     "name": "editor",
     "path": "/editor",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/editor.vue",
-    "chunkName": "pages/editor"
+    "chunkName": "pages/editor",
+    "_name": "_7a0ea6c3"
   },
   {
     "name": "diary-20200803",
     "path": "/diary/20200803",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200803.vue",
-    "chunkName": "pages/diary/20200803"
+    "chunkName": "pages/diary/20200803",
+    "_name": "_793f8e29"
   },
   {
     "name": "diary-20200906",
     "path": "/diary/20200906",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200906.vue",
-    "chunkName": "pages/diary/20200906"
+    "chunkName": "pages/diary/20200906",
+    "_name": "_a35fe026"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_529ab16c"
   }
 ]

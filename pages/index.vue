@@ -1,33 +1,31 @@
+<!--
+ * @Author: jiarong.deng
+ * @Date: 2020-07-29 21:56:51
+ * @LastEditors: jiarong.deng
+ * @LastEditTime: 2020-09-14 22:10:14
+ * @Description: file content
+-->
 <template>
   <div class="container">
     <div class="paragraph f24"><i>Blogs</i></div>
-
     <base-summary 
       v-for="(item, index) in summaryArr" 
       :key="index"
       :summary="item" 
     />
-    <!-- <base-summary :summary="{title: '666'}" />
-    <base-summary :summary="{title: '666'}" />
-    <base-summary :summary="{title: '666'}" />
-    <base-summary :summary="{title: '666'}" />
-    <base-summary :summary="{title: '666'}" />
-    <base-summary :summary="{title: '666'}" />
-    <base-summary :summary="{title: '666'}" /> -->
-    <span>111</span>
   </div>
 </template> 
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import jsonFile from '../data.json';
+const jsonFile = require('~/assets/js/data.json');
 
 @Component
 export default class Home extends Vue {
   public summaryArr = jsonFile.data;
 
   mounted() {
-    console.log('data...', jsonFile.data);
+    this.$store.commit('article/setTitle', 'Summary');
   }
 }
 </script>

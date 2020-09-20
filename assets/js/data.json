@@ -1,10 +1,17 @@
 {
   "data": [
     {
-      "title": "video 标签使用小结",
+      "title": "H5 <video> 标签使用",
       "route": "/diary/20200803",
       "summary": "video 标签最基本的使用是，指定 src 并加上 controls 属性，这样在支持的浏览器上便可以播放了。video 标签支持  Mp4、WebM、Ogg 格式，其中 mp4 格式视频流在一般浏览器均支持。 video 的属性设置不只简单的提供了一个 controls，还有更多的可配置项，比如：通过添加 autoplay 属性开启在动播放、通过添加 muted 设置为静音模式、通过给 volume 属性设置0.0~1.0之间的数值控制初始音量大小、通过读取 currentTime 属性的值可获取当前播放时间，为其赋值将会使媒体跳到一个新的时间、通过 css object-fit 属性，设置画面是否适应容器大小，是否保持原比例等。",
       "postedTime": "2020/08/03",
+      "label": ""
+    },
+    {
+      "title": "部署 Nuxt.js 项目",
+      "route": "/diary/20200906",
+      "summary": "Nuxt.js 是 Vue.js 的通用应用框架，采用服务器端渲染（SSR 渲染），使得基于 Vue 的单页 Web 应用 (single page web application，SPA) 也能够拥有良好的 SEO (Search Engine Optimization)支持。",
+      "postedTime": "2020/09/06",
       "label": ""
     }
   ]

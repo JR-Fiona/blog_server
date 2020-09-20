@@ -24,7 +24,7 @@ import { Button } from 'ant-design-vue';
 
 import { Component, Vue } from 'vue-property-decorator';
 Vue.use(Button);
-let editor:Object = {};
+let editor:any = {};
 
 
 @Component

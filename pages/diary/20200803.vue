@@ -9,8 +9,6 @@
   <div class="container">
     <MyBlockquote />
     <main class="content">
-      <code class="paragraph">2020/08/25 jiarong.deng</code>
-
       <chapter-title title="一、video 标签基本使用" type="h2" />
      
       <!-- 1.1 start -->
