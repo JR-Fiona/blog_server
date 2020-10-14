@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -13,7 +12,7 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_e13a80c8 from 'nuxt_plugin_plugin_e13a80c8' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_e8e77026 from 'nuxt_plugin_plugin_e8e77026' // Source: .\\components\\plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -44,13 +43,6 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-const originalRegisterModule = Vuex.Store.prototype.registerModule
-const baseStoreOptions = { preserveState: process.client }
-
-function registerModule (path, rawModule, options = {}) {
-  return originalRegisterModule.call(this, path, rawModule, { ...baseStoreOptions, ...options })
-}
-
 async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext)
 
@@ -59,7 +51,8 @@ async function createApp(ssrContext, config = {}) {
   store.$router = router
 
   // Fix SSR caveat https://github.com/nuxt/nuxt.js/issues/3757#issuecomment-414689141
-  store.registerModule = registerModule
+  const registerModule = store.registerModule
+  store.registerModule = (path, rawModule, options) => registerModule.call(store, path, rawModule, Object.assign({ preserveState: process.client }, options))
 
   // Create Root instance
 
@@ -195,8 +188,8 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_e13a80c8 === 'function') {
-    await nuxt_plugin_plugin_e13a80c8(app.context, inject)
+  if (typeof nuxt_plugin_plugin_e8e77026 === 'function') {
+    await nuxt_plugin_plugin_e8e77026(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -209,13 +202,9 @@ async function createApp(ssrContext, config = {}) {
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
     await new Promise((resolve, reject) => {
-      router.push(ssrContext.url, resolve, (err) => {
-        // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
-        if (!err._isRouter) return reject(err)
-        if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()
-
+      router.push(ssrContext.url, resolve, () => {
         // navigated to a different route in router guard
-        const unregister = router.afterEach(async (to, from) => {
+        const unregister = router.afterEach(async (to, from, next) => {
           ssrContext.url = to.fullPath
           app.context.route = await getRouteData(to)
           app.context.params = to.params || {}
