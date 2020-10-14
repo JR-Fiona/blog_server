@@ -2,29 +2,36 @@
   {
     "name": "editor",
     "path": "/editor",
-    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/editor.vue",
+    "component": "D:\\\\Users\\\\Unionman\\\\Documents\\\\GitHub\\\\blog_server\\\\pages\\\\editor.vue",
     "chunkName": "pages/editor",
-    "_name": "_7a0ea6c3"
+    "_name": "_59bb389d"
+  },
+  {
+    "name": "markdown",
+    "path": "/markdown",
+    "component": "D:\\\\Users\\\\Unionman\\\\Documents\\\\GitHub\\\\blog_server\\\\pages\\\\markdown.vue",
+    "chunkName": "pages/markdown",
+    "_name": "_1d7d1d1f"
   },
   {
     "name": "diary-20200803",
     "path": "/diary/20200803",
-    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200803.vue",
+    "component": "D:\\\\Users\\\\Unionman\\\\Documents\\\\GitHub\\\\blog_server\\\\pages\\\\diary\\\\20200803.vue",
     "chunkName": "pages/diary/20200803",
-    "_name": "_793f8e29"
+    "_name": "_56fb0e0a"
   },
   {
     "name": "diary-20200906",
     "path": "/diary/20200906",
-    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/diary/20200906.vue",
+    "component": "D:\\\\Users\\\\Unionman\\\\Documents\\\\GitHub\\\\blog_server\\\\pages\\\\diary\\\\20200906.vue",
     "chunkName": "pages/diary/20200906",
-    "_name": "_a35fe026"
+    "_name": "_e7e8e064"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/dengjiarong/Documents/GitHub/blog_server/pages/index.vue",
+    "component": "D:\\\\Users\\\\Unionman\\\\Documents\\\\GitHub\\\\blog_server\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_529ab16c"
+    "_name": "_30877c52"
   }
 ]
