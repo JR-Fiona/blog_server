@@ -6,6 +6,7 @@
  * @Description: file content
  */
 
+
 export function fetchFile(url) {
   return fetch(url).then(res => {
     const reader = res.body.getReader();

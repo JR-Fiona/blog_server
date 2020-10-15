@@ -1,21 +1,21 @@
 import Vue from 'vue'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-
+import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '..\\assets\\styles\\lib.css'
+import '../assets/styles/lib.css'
 
-import '..\\assets\\styles\\reset.css'
+import '../assets/styles/reset.css'
 
-import '..\\assets\\styles\\styles.css'
+import '../assets/styles/styles.css'
 
-import '..\\node_modules\\ant-design-vue\\dist\\antd.css'
+import '../node_modules/_ant-design-vue@1.6.5@ant-design-vue/dist/antd.css'
 
-import '..\\node_modules\\highlight.js\\styles\\github.css'
+import '../node_modules/_highlight.js@10.2.1@highlight.js/styles/github.css'
 
-import _6f6c098b from '..\\layouts\\default.vue'
+import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 
@@ -165,15 +165,24 @@ export default {
       }
       this.$loading.finish()
     },
-
     errorChanged () {
-      if (this.nuxt.err && this.$loading) {
-        if (this.$loading.fail) {
-          this.$loading.fail(this.nuxt.err)
+      if (this.nuxt.err) {
+        if (this.$loading) {
+          if (this.$loading.fail) {
+            this.$loading.fail(this.nuxt.err)
+          }
+          if (this.$loading.finish) {
+            this.$loading.finish()
+          }
         }
-        if (this.$loading.finish) {
-          this.$loading.finish()
+
+        let errorLayout = (NuxtError.options || NuxtError).layout;
+
+        if (typeof errorLayout === 'function') {
+          errorLayout = errorLayout(this.context)
         }
+
+        this.setLayout(errorLayout)
       }
     },
 

@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _59bb389d = () => interopDefault(import('..\\pages\\editor.vue' /* webpackChunkName: "pages/editor" */))
-const _1d7d1d1f = () => interopDefault(import('..\\pages\\markdown.vue' /* webpackChunkName: "pages/markdown" */))
-const _56fb0e0a = () => interopDefault(import('..\\pages\\diary\\20200803.vue' /* webpackChunkName: "pages/diary/20200803" */))
-const _e7e8e064 = () => interopDefault(import('..\\pages\\diary\\20200906.vue' /* webpackChunkName: "pages/diary/20200906" */))
-const _30877c52 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _7a0ea6c3 = () => interopDefault(import('../pages/editor.vue' /* webpackChunkName: "pages/editor" */))
+const _4b249e0e = () => interopDefault(import('../pages/markdow.vue' /* webpackChunkName: "pages/markdow" */))
+const _793f8e29 = () => interopDefault(import('../pages/diary/20200803.vue' /* webpackChunkName: "pages/diary/20200803" */))
+const _a35fe026 = () => interopDefault(import('../pages/diary/20200906.vue' /* webpackChunkName: "pages/diary/20200906" */))
+const _529ab16c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -27,23 +27,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/editor",
-    component: _59bb389d,
+    component: _7a0ea6c3,
     name: "editor"
   }, {
-    path: "/markdown",
-    component: _1d7d1d1f,
-    name: "markdown"
+    path: "/markdow",
+    component: _4b249e0e,
+    name: "markdow"
   }, {
     path: "/diary/20200803",
-    component: _56fb0e0a,
+    component: _793f8e29,
     name: "diary-20200803"
   }, {
     path: "/diary/20200906",
-    component: _e7e8e064,
+    component: _a35fe026,
     name: "diary-20200906"
   }, {
     path: "/",
-    component: _30877c52,
+    component: _529ab16c,
     name: "index"
   }],
 

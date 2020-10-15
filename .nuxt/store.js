@@ -17,14 +17,14 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('..\\store\\article.js'), 'article.js')
+  resolveStoreModules(require('../store/article.js'), 'article.js')
 
   // If the environment supports hot reloading...
 
   if (process.client && module.hot) {
     // Whenever any Vuex module is updated...
     module.hot.accept([
-      '..\\store\\article.js',
+      '../store/article.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()
@@ -81,10 +81,10 @@ function resolveStoreModules (moduleData, filename) {
   // If src is a known Vuex property
   if (VUEX_PROPERTIES.includes(moduleName)) {
     const property = moduleName
-    const storeModule = getStoreModule(store, namespaces, { isProperty: true })
+    const propertyStoreModule = getStoreModule(store, namespaces, { isProperty: true })
 
     // Replace state since it's a function
-    mergeProperty(storeModule, moduleData, property)
+    mergeProperty(propertyStoreModule, moduleData, property)
     return
   }
 
