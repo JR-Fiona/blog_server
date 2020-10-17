@@ -6,7 +6,7 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "commit": "git-cz",
+    "commit": "git add . && git-cz",
     "generate": "nuxt-ts generate",
     "test": "jest"
   },
