@@ -1,0 +1,18 @@
+version: "3"
+services:
+  blog:
+    image: blog_nuxt:latest
+    container_name: blog_nuxt
+    restart: always
+    ports:
+      - "3000:3000" 
+    ulimits:
+      nproc: 100000
+      nofile:
+        soft: 100000
+        hard: 200000
+    networks:
+      - blog
+networks:
+  blog: 
+    driver: bridge
