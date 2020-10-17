@@ -14,5 +14,5 @@ services:
     networks:
       - blog
 networks:
-  blog: 
+  blog:
     driver: bridge

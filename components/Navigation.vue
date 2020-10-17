@@ -1,16 +1,28 @@
+<!--
+ * @Author: jiarong.deng
+ * @Date: 2020-07-30 19:48:23
+ * @LastEditors: jiarong.deng
+ * @LastEditTime: 2020-10-18 00:04:37
+ * @Description: file content
+-->
 <template>
   <header class="home_header bg3 ns">
     <!-- Nav -->
-    <nav class="ovh pt20 pl20">
-      <i class="wh l f24 b">Djiarong</i>
-      <a 
-        v-for="item in menus" 
-        :key="item" 
-        class="r mr20 f15 wh b ho8 poi trans csp tdn"
-        :to="item"
-      >
-        {{ item }}
-      </a>
+    <nav class="header_nav ovh bg3 pt20 pb20 pl20 bs">
+      <p class="nav_left">
+        <i class="wh f24 b">Djiarong</i>
+        <img class="header_img vm ml10 bs" src="~/assets/images/logo.png" alt="Logo">
+      </p>
+      <p class="nav_right">
+        <a 
+          v-for="item in menus" 
+          :key="item.name" 
+          class="f15 wh ho8 poi trans csp tdn"
+          :href="item.url"
+        >
+          {{ item.name }}
+        </a>
+      </p>
     </nav>
     <!-- Drop -->
     <main class="drop">
@@ -25,16 +37,51 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 @Component
 export default class Index extends Vue {
-  private menus = ['menu3', '目录', '首页']
+  private menus = [
+    {
+      name: '首页',
+      url: '/'
+    }, 
+    {
+      name: '目录',
+      url: '/'
+    },
+    {
+      name: 'menu3',
+      url: '/'
+    }]
+
   @Prop({ type: String, default: 'Djiarong' }) title!: string
 
 }
 </script>
 <style lang="scss" scoped>
 .home_header { height: 420px; }
+
+.header_nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+.nav_right {
+  display: flex;
+  align-content: center;
+  a { margin: auto 10px; }
+}
+
+.header_img { 
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%; 
+}
+
 .drop {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 120px;
 }
 .drop_name { font-size: 5rem; }
 </style>
