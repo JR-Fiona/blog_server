@@ -7,7 +7,7 @@
 -->
 <template>
   <div class="container">
-    <MyBlockquote />
+    <BaseBlockquote />
     <main class="content">
       <chapter-title title="一、video 标签基本使用" type="h2" />
      
@@ -164,7 +164,7 @@
       <code class="paragraph"><pre id="pre"><code class="javascript">{{ code221 }}</code></pre></code>
       <!-- 2.2 end -->
     </main>
-    <Catalog :nodes="nodes" />
+    <BaseCatalog :nodes="nodes" />
   </div>
 </template>
 

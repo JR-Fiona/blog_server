@@ -21,7 +21,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
     }
   }
 })
-export default class Catalog extends Vue {
+export default class BaseCatalog extends Vue {
   @Prop({ type: Array, required: true }) readonly nodes: any
   mounted() {
     // console.log('this nodes...', this.nodes);

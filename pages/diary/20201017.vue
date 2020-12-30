@@ -7,9 +7,9 @@
 -->
 <template>
   <div class="container">
-    <MyBlockquote />
+    <BaseBlockquote />
     <main class="content markdown_preview"></main>
-    <Catalog :nodes="nodes" />
+    <BaseCatalog :nodes="nodes" />
   </div>
 </template> 
 

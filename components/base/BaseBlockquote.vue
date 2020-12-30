@@ -7,7 +7,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component
-export default class MyBlockquote extends Vue {}
+export default class BaseBlockquote extends Vue {}
 </script>
 <style lang="scss">
 </style>

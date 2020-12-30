@@ -7,7 +7,7 @@
 -->
 <template>
   <div class="container">
-    <MyBlockquote />
+    <BaseBlockquote />
     <main class="content">
       <!-- 1 start -->
       <chapter-title title="一、Nuxt.js" type="h2" />
@@ -60,7 +60,7 @@
         </pre>
       </code>
     </main>
-    <Catalog :nodes="nodes" />
+    <BaseCatalog :nodes="nodes" />
   </div>
 </template>
 

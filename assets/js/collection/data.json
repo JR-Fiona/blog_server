@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "title": "React Native app",
+      "route": "/collection/RNApp",
+      "summary": "点击查看界面截图",
+      "postedTime": "2020/12/30",
+      "label": ""
+    },
+    {
+      "title": "Flutter app",
+      "route": "/collection/FlutterApp",
+      "summary": "点击查看内容截图",
+      "postedTime": "2020/12/30",
+      "label": ""
+    }
+  ]
+}

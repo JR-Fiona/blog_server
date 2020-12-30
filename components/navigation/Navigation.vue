@@ -47,8 +47,8 @@ export default class Index extends Vue {
       url: '/'
     },
     {
-      name: 'menu3',
-      url: '/'
+      name: '作品集',
+      url: '/collection'
     }]
 
   @Prop({ type: String, default: 'Djiarong' }) title!: string
