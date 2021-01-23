@@ -2,7 +2,7 @@
  * @Author: jiarong.deng
  * @Date: 2020-07-30 19:48:23
  * @LastEditors: jiarong.deng
- * @LastEditTime: 2020-10-18 00:04:37
+ * @LastEditTime: 2021-01-23 14:16:23
  * @Description: file content
 -->
 <template>
@@ -34,6 +34,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import { RESUME_URL } from '~/config/index';
 
 @Component
 export default class Index extends Vue {
@@ -49,7 +50,12 @@ export default class Index extends Vue {
     {
       name: '作品集',
       url: '/collection'
-    }]
+    },
+    {
+      name: '个人简历',
+      url: RESUME_URL
+    }
+  ]
 
   @Prop({ type: String, default: 'Djiarong' }) title!: string
 
